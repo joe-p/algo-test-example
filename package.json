@@ -1,0 +1,32 @@
+{
+  "name": "algo-test-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "./contract.py && tsc && jest",
+    "lint": "eslint index.ts",
+    "fix": "eslint index.ts --fix"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/index.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "algosdk": "^1.13.1",
+    "jest": "^27.5.1"
+  }
+}
